@@ -1,6 +1,6 @@
-*{ 
-    margin: 0;
-    padding: 0;
+*{
+    padding: 0px;
+    margin: 0px;
 }
 
 body{
@@ -11,15 +11,19 @@ body{
 }
 
 header{
+    width: 100%;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+    position: fixed;
 }
 
 #navbar-pinterest{
     display: flex;
     align-items: center;
-    width: 100%;
+    justify-content: center;
     height: 56px;
     padding: 20px;
     font-size: 16px;
+    background-color: white;
 }
 
 ul{
@@ -46,7 +50,7 @@ img{
 }
 
 .finder{
-    width: 860px;
+    width: 100%;
     padding: 20px;
     border-radius: 100px;
     border: none;
@@ -54,7 +58,40 @@ img{
 }
 
 .icons{
-    margin-left: 5px;
-    margin-right: 5px;
     width: 30px;
+    padding: 10px;
+}
+
+.icons:hover{
+    padding: 10px;
+    background-color: rgba(175, 175, 175, 0.341);
+    border-radius: 100px;
+}
+
+#content{
+    column-count: 5;
+    padding: 20px;
+}
+
+.card-image{
+    width: 100%;
+    margin: 5px;
+}
+
+.img-pinterest{
+    width: 100%;
+    border-radius: 10px;
+}
+
+@media(max-width:768px){
+    #content{
+        column-count: 3;
+    }
+}
+
+
+@media(max-width:425px){
+    #content{
+        column-count: 2;
+    }
 }
